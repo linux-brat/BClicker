@@ -1,129 +1,208 @@
-# WARP.md
+<div align="center">
 
-This file provides guidance to WARP (warp.dev) when working with code in this repository.
+# BClicker Professional
 
-## Project Overview
+[![GitHub release](https://img.shields.io/github/v/release/linux-brat/BClicker?include_prereleases&style=for-the-badge&color=blue)](https://github.com/linux-brat/BClicker/releases)
+[![GitHub license](https://img.shields.io/github/license/linux-brat/BClicker?style=for-the-badge&color=green)](https://github.com/linux-brat/BClicker/blob/main/LICENSE)
+[![Rust](https://img.shields.io/badge/Rust-2025-orange?style=for-the-badge&logo=rust)](https://www.rust-lang.org/)
+[![WARP](https://img.shields.io/badge/WARP-Compatible-purple?style=for-the-badge)](https://warp.dev)
 
-BClicker Professional is a Rust-based auto-clicker application with a TUI (Terminal User Interface) built using crossterm and tui-rs. The application provides professional auto-clicking functionality with global hotkey support, system tray integration, audio feedback, and statistics tracking.
+**A professional Rust-based auto-clicker with a sleek Terminal User Interface**
 
-**Technology Stack:**
-- Language: Rust (2024 edition)
-- UI Framework: tui-rs with crossterm backend
-- Mouse Control: enigo crate
-- Audio: rodio for sound effects
-- Configuration: TOML serialization with serde
-- System Tray: tray-item
-- Notifications: notify-rust
-- Platform: Windows-focused (with global hotkey support via Win32 API)
+<img src="https://via.placeholder.com/600x400?text=BClicker+Screenshot" alt="BClicker Screenshot">
 
-## Installation
+</div>
 
-### Prerequisites
-- **Rust toolchain**: Install from [rustup.rs](https://rustup.rs/)
-- **Git**: For cloning the repository
-- **Windows**: Windows SDK for global hotkey functionality
-- **Linux**: Audio development libraries (ALSA/PulseAudio)
+## 🚀 Project Overview
 
-### Install from GitHub
+BClicker Professional is a high-performance auto-clicker application with a TUI (Terminal User Interface) built using crossterm and tui-rs. The application provides professional auto-clicking functionality with global hotkey support, system tray integration, audio feedback, and statistics tracking.
 
-#### Windows
-```powershell
-# Clone the repository
-git clone https://github.com/username/BClicker.git
+## ✨ Key Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎮 Core Features
+- 🖱️ **High-Precision Clicking**: Microsecond-accurate timing
+- ⌨️ **Global Hotkeys**: Control from anywhere (Windows)
+- 🎨 **Beautiful TUI**: Terminal-based interface
+- 📈 **Statistics Tracking**: Monitor your usage
+- 🔊 **Audio Feedback**: Optional click sounds
+- 📱 **System Tray**: Background operation
+
+</td>
+<td width="50%">
+
+### ⚙️ Technical Features
+- 🏁 **Multi-threaded**: Non-blocking performance
+- 📋 **TOML Configuration**: Human-readable settings
+- 🔔 **Cross-platform**: Windows & Linux support
+- 📦 **Portable**: Single executable
+- 🚪 **Zero Dependencies**: Standalone operation
+- 🔒 **Memory Safe**: Rust guarantees
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technology | Purpose |
+|-----------|-----------|----------|
+| 🦀 **Language** | Rust (2025 edition) | High-performance systems programming |
+| 🖥️ **UI Framework** | tui-rs + crossterm | Terminal-based user interface |
+| 🖱️ **Mouse Control** | enigo | Cross-platform mouse automation |
+| 🔊 **Audio** | rodio | Non-blocking sound effects |
+| ⚙️ **Configuration** | TOML + serde | Human-readable config files |
+| 📱 **System Tray** | tray-item | Background system integration |
+| 🔔 **Notifications** | notify-rust | Cross-platform notifications |
+| 🪟 **Platform** | Windows + Win32 API | Global hotkey support |
+
+---
+
+## ⚡ Quick Start (TL;DR)
+
+```bash
+# 🚀 Get up and running in 30 seconds!
+git clone https://github.com/linux-brat/BClicker.git
 cd BClicker
-
-# Build and install
-cargo build --release
-
-# Run the application
-.\target\release\BClicker.exe
-
-# Optional: Add to PATH for system-wide access
-# Copy target\release\BClicker.exe to a directory in your PATH
-```
-
-#### Linux
-```bash
-# Install audio development libraries (Ubuntu/Debian)
-sudo apt update
-sudo apt install libasound2-dev pkg-config
-
-# For other distributions:
-# Fedora: sudo dnf install alsa-lib-devel pkgconf
-# Arch: sudo pacman -S alsa-lib pkgconf
-
-# Clone the repository
-git clone https://github.com/username/BClicker.git
-cd BClicker
-
-# Build and install
-cargo build --release
-
-# Run the application
-./target/release/BClicker
-
-# Optional: Install system-wide
-sudo cp target/release/BClicker /usr/local/bin/
-```
-
-### Direct Cargo Installation
-```bash
-# Install directly from GitHub (if published)
-cargo install --git https://github.com/username/BClicker.git
-
-# Or install from crates.io (if published)
-cargo install bclicker
-```
-
-## Common Development Commands
-
-### Build and Run
-```bash
-# Build the project in debug mode
-cargo build
-
-# Build for release (optimized)
-cargo build --release
-
-# Run the application in debug mode
-cargo run
-
-# Run with release optimizations
 cargo run --release
 ```
 
-### Testing and Linting
-```bash
-# Run tests (if any exist)
-cargo test
+**🎮 Controls:**
+- `Space` - Start/Stop clicking
+- `Tab` - Switch between presets
+- `h` - Help menu
+- `q` - Quit
 
-# Check code without building
-cargo check
+> 💫 **WARP Users**: This works perfectly in WARP terminal with full Unicode support and beautiful rendering!
 
-# Format code according to Rust standards
-cargo fmt
+---
 
-# Run clippy for additional linting
-cargo clippy
+## 📦 Detailed Installation
 
-# Run clippy with strict settings
-cargo clippy -- -D warnings
+### 🔧 Prerequisites
+- 🦀 **Rust toolchain**: Install from [rustup.rs](https://rustup.rs/)
+- 📋 **Git**: For cloning the repository
+- 🪟 **Windows**: Windows SDK for global hotkey functionality
+- 🐧 **Linux**: Audio development libraries (ALSA/PulseAudio)
+
+---
+
+### 💻 One-Click Installation
+
+#### 🪟 Windows (PowerShell)
+```powershell
+# 🚀 Quick Setup - Copy & Paste!
+git clone https://github.com/linux-brat/BClicker.git
+cd BClicker
+cargo build --release
+
+# ▶️ Run BClicker
+.\target\release\bclicker.exe
+
+# 🌍 Optional: Add to PATH for global access
+# Copy target\release\bclicker.exe to C:\Windows\System32\ or your preferred PATH directory
 ```
 
-### Development Utilities
+> **📝 Note**: Replace `bclicker.exe` with the actual executable name if different
+
+#### 🐧 Linux (Bash)
 ```bash
-# Clean build artifacts
+# 📦 Install audio libraries (Ubuntu/Debian)
+sudo apt update && sudo apt install libasound2-dev pkg-config
+
+# 🎆 For other distributions:
+# Fedora: sudo dnf install alsa-lib-devel pkgconf
+# Arch: sudo pacman -S alsa-lib pkgconf
+
+# 🚀 Quick Setup - Copy & Paste!
+git clone https://github.com/linux-brat/BClicker.git
+cd BClicker
+cargo build --release
+
+# ▶️ Run BClicker
+./target/release/bclicker
+
+# 🌍 Optional: Install system-wide
+sudo cp target/release/bclicker /usr/local/bin/
+```
+
+### 📦 Direct Cargo Installation
+```bash
+# 🚀 Install directly from GitHub
+cargo install --git https://github.com/linux-brat/BClicker.git
+
+# 🎆 Or install from crates.io (when published)
+cargo install bclicker
+```
+
+---
+
+## ⚙️ WARP Development Commands
+
+> 💡 **WARP Users**: These commands work perfectly in WARP terminal with syntax highlighting and autocompletion!
+
+### 🔨 Build & Run Commands
+
+| Command | Description | WARP Tip |
+|---------|-------------|----------|
+| `cargo build` | 🚀 Debug build | 📝 Use WARP's AI to explain any build errors |
+| `cargo build --release` | ⚡ Optimized release build | 📊 View build progress in WARP's enhanced output |
+| `cargo run` | ▶️ Run in debug mode | 🔍 Perfect for development with WARP's terminal multiplexing |
+| `cargo run --release` | 🏁 Run optimized version | ⚙️ Best performance for testing |
+
+```bash
+# 🚀 Quick Development Cycle
+cargo run          # Fast compilation, debug info
+cargo run --release # Optimized performance
+```
+
+### 🧪 Testing & Code Quality
+
+| Command | Purpose | WARP Feature |
+|---------|---------|---------------|
+| `cargo test` | 🧪 Run all tests | 📈 Test results beautifully formatted |
+| `cargo check` | ⚙️ Fast syntax check | ⚡ Lightning-fast feedback loop |
+| `cargo fmt` | 🎨 Format code | 📝 Instant code beautification |
+| `cargo clippy` | 🔍 Lint analysis | 💡 Smart suggestions in WARP |
+| `cargo clippy -- -D warnings` | 🛡️ Strict linting | 🚫 Zero tolerance for warnings |
+
+```bash
+# 🚀 Code Quality Pipeline
+cargo check      # Quick syntax validation
+cargo fmt        # Auto-format code
+cargo clippy     # Catch common issues
+cargo test       # Ensure everything works
+```
+
+### 🛠️ Development Utilities
+
+```bash
+# 🧼 Clean build artifacts
 cargo clean
 
-# Update dependencies
+# 🆕 Update dependencies
 cargo update
 
-# Show dependency tree
+# 🌳 Show dependency tree
 cargo tree
 
-# Check for security vulnerabilities
+# 🔒 Security audit (install with: cargo install cargo-audit)
 cargo audit
+
+# 📂 Generate documentation
+cargo doc --open
+
+# 📈 Performance profiling
+cargo build --release
+time ./target/release/bclicker
 ```
+
+> 💫 **WARP Pro Tip**: Use WARP's AI assistant to explain any cargo commands or help debug build issues!
 
 ## Architecture Overview
 
