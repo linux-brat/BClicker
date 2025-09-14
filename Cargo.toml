@@ -1,12 +1,22 @@
 [package]
 name = "bclicker"
-version = "2.0.0"
-edition = "2025"
-authors = ["Linux Brat <linux.bratt@gmail.com>"]
-description = "Professional auto-clicker with TUI interface"
+version = "0.1.0"
+edition = "2021"
+authors = ["Linux Bratt"]
 license = "MIT"
+description = "Professional auto-clicker with TUI interface, global hotkeys, and system tray integration"
+readme = "README.md"
+homepage = "https://github.com/linux-brat/BClicker"
 repository = "https://github.com/linux-brat/BClicker"
-keywords = ["clicker", "automation", "tui", "windows"]
+documentation = "https://github.com/linux-brat/BClicker"
+keywords = ["clicker", "automation", "tui", "gui", "productivity"]
+categories = ["command-line-utilities", "gui"]
+exclude = [
+    "target/*",
+    ".git/*",
+    "*.log",
+    "bclicker_config.toml"
+]
 
 [[bin]]
 name = "bclicker"
@@ -22,5 +32,6 @@ notify-rust = "4.10"
 serde = { version = "1.0", features = ["derive"] }
 toml = "0.8"
 
-[target.'cfg(windows)'.dependencies]
-windows = { version = "0.48", features = ["Win32_UI_WindowsAndMessaging", "Win32_Foundation"] }
+[target.'cfg(windows)'.dependencies.windows]
+version = "0.48"
+features = ["Win32_UI_WindowsAndMessaging", "Win32_Foundation"]
