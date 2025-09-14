@@ -9,7 +9,7 @@
 
 **A professional Rust-based auto-clicker with a sleek Terminal User Interface**
 
-<img src="https://via.placeholder.com/600x400?text=BClicker+Screenshot" alt="BClicker Screenshot">
+<img src="screenshot/ss.png" alt="BClicker Screenshot">
 
 </div>
 
@@ -24,6 +24,7 @@ BClicker Professional is a high-performance auto-clicker application with a TUI 
 <td width="50%">
 
 ### 🎮 Core Features
+
 - 🖱️ **High-Precision Clicking**: Microsecond-accurate timing
 - ⌨️ **Global Hotkeys**: Control from anywhere (Windows)
 - 🎨 **Beautiful TUI**: Terminal-based interface
@@ -35,6 +36,7 @@ BClicker Professional is a high-performance auto-clicker application with a TUI 
 <td width="50%">
 
 ### ⚙️ Technical Features
+
 - 🏁 **Multi-threaded**: Non-blocking performance
 - 📋 **TOML Configuration**: Human-readable settings
 - 🔔 **Cross-platform**: Windows & Linux support
@@ -50,16 +52,16 @@ BClicker Professional is a high-performance auto-clicker application with a TUI 
 
 ## 🛠️ Technology Stack
 
-| Component | Technology | Purpose |
-|-----------|-----------|----------|
-| 🦀 **Language** | Rust (2025 edition) | High-performance systems programming |
-| 🖥️ **UI Framework** | tui-rs + crossterm | Terminal-based user interface |
-| 🖱️ **Mouse Control** | enigo | Cross-platform mouse automation |
-| 🔊 **Audio** | rodio | Non-blocking sound effects |
-| ⚙️ **Configuration** | TOML + serde | Human-readable config files |
-| 📱 **System Tray** | tray-item | Background system integration |
-| 🔔 **Notifications** | notify-rust | Cross-platform notifications |
-| 🪟 **Platform** | Windows + Win32 API | Global hotkey support |
+| Component            | Technology          | Purpose                              |
+| -------------------- | ------------------- | ------------------------------------ |
+| 🦀 **Language**      | Rust (2025 edition) | High-performance systems programming |
+| 🖥️ **UI Framework**  | tui-rs + crossterm  | Terminal-based user interface        |
+| 🖱️ **Mouse Control** | enigo               | Cross-platform mouse automation      |
+| 🔊 **Audio**         | rodio               | Non-blocking sound effects           |
+| ⚙️ **Configuration** | TOML + serde        | Human-readable config files          |
+| 📱 **System Tray**   | tray-item           | Background system integration        |
+| 🔔 **Notifications** | notify-rust         | Cross-platform notifications         |
+| 🪟 **Platform**      | Windows + Win32 API | Global hotkey support                |
 
 ---
 
@@ -73,6 +75,7 @@ cargo run --release
 ```
 
 **🎮 Controls:**
+
 - `Space` - Start/Stop clicking
 - `Tab` - Switch between presets
 - `h` - Help menu
@@ -85,6 +88,7 @@ cargo run --release
 ## 📦 Detailed Installation
 
 ### 🔧 Prerequisites
+
 - 🦀 **Rust toolchain**: Install from [rustup.rs](https://rustup.rs/)
 - 📋 **Git**: For cloning the repository
 - 🪟 **Windows**: Windows SDK for global hotkey functionality
@@ -95,6 +99,7 @@ cargo run --release
 ### 💻 One-Click Installation
 
 #### 🪟 Windows (PowerShell)
+
 ```powershell
 # 🚀 Quick Setup - Copy & Paste!
 git clone https://github.com/linux-brat/BClicker.git
@@ -111,6 +116,7 @@ cargo build --release
 > **📝 Note**: Replace `bclicker.exe` with the actual executable name if different
 
 #### 🐧 Linux (Bash)
+
 ```bash
 # 📦 Install audio libraries (Ubuntu/Debian)
 sudo apt update && sudo apt install libasound2-dev pkg-config
@@ -132,6 +138,7 @@ sudo cp target/release/bclicker /usr/local/bin/
 ```
 
 ### 📦 Direct Cargo Installation
+
 ```bash
 # 🚀 Install directly from GitHub
 cargo install --git https://github.com/linux-brat/BClicker.git
@@ -148,12 +155,12 @@ cargo install bclicker
 
 ### 🔨 Build & Run Commands
 
-| Command | Description | WARP Tip |
-|---------|-------------|----------|
-| `cargo build` | 🚀 Debug build | 📝 Use WARP's AI to explain any build errors |
-| `cargo build --release` | ⚡ Optimized release build | 📊 View build progress in WARP's enhanced output |
-| `cargo run` | ▶️ Run in debug mode | 🔍 Perfect for development with WARP's terminal multiplexing |
-| `cargo run --release` | 🏁 Run optimized version | ⚙️ Best performance for testing |
+| Command                 | Description                | WARP Tip                                                     |
+| ----------------------- | -------------------------- | ------------------------------------------------------------ |
+| `cargo build`           | 🚀 Debug build             | 📝 Use WARP's AI to explain any build errors                 |
+| `cargo build --release` | ⚡ Optimized release build | 📊 View build progress in WARP's enhanced output             |
+| `cargo run`             | ▶️ Run in debug mode       | 🔍 Perfect for development with WARP's terminal multiplexing |
+| `cargo run --release`   | 🏁 Run optimized version   | ⚙️ Best performance for testing                              |
 
 ```bash
 # 🚀 Quick Development Cycle
@@ -163,13 +170,13 @@ cargo run --release # Optimized performance
 
 ### 🧪 Testing & Code Quality
 
-| Command | Purpose | WARP Feature |
-|---------|---------|---------------|
-| `cargo test` | 🧪 Run all tests | 📈 Test results beautifully formatted |
-| `cargo check` | ⚙️ Fast syntax check | ⚡ Lightning-fast feedback loop |
-| `cargo fmt` | 🎨 Format code | 📝 Instant code beautification |
-| `cargo clippy` | 🔍 Lint analysis | 💡 Smart suggestions in WARP |
-| `cargo clippy -- -D warnings` | 🛡️ Strict linting | 🚫 Zero tolerance for warnings |
+| Command                       | Purpose              | WARP Feature                          |
+| ----------------------------- | -------------------- | ------------------------------------- |
+| `cargo test`                  | 🧪 Run all tests     | 📈 Test results beautifully formatted |
+| `cargo check`                 | ⚙️ Fast syntax check | ⚡ Lightning-fast feedback loop       |
+| `cargo fmt`                   | 🎨 Format code       | 📝 Instant code beautification        |
+| `cargo clippy`                | 🔍 Lint analysis     | 💡 Smart suggestions in WARP          |
+| `cargo clippy -- -D warnings` | 🛡️ Strict linting    | 🚫 Zero tolerance for warnings        |
 
 ```bash
 # 🚀 Code Quality Pipeline
@@ -211,6 +218,7 @@ time ./target/release/bclicker
 The application follows a modular architecture with clear separation of concerns:
 
 **Main Components:**
+
 1. **App State Management** (`App` struct) - Central application state, configuration, and UI modes
 2. **Event System** - Multi-threaded event handling for input, ticking, and quit signals
 3. **Auto-Clicker Engine** - Dedicated thread for mouse clicking with precise timing
@@ -220,12 +228,14 @@ The application follows a modular architecture with clear separation of concerns
 ### Key Data Structures
 
 **Configuration System:**
+
 - `Config` struct handles all persistent settings
 - `Statistics` struct tracks usage metrics across sessions
 - `KeyCombo` struct represents global hotkey combinations
 - Auto-saves to `bclicker_config.toml` in the current directory
 
 **Threading Architecture:**
+
 - **Main Thread**: UI rendering and input handling
 - **Clicker Thread**: High-precision mouse clicking loop
 - **Event Threads**: Separate threads for input capture and tick events
@@ -235,6 +245,7 @@ The application follows a modular architecture with clear separation of concerns
 ### Input Mode System
 
 The application uses a state machine for different input modes:
+
 - `Normal` - Standard navigation and controls
 - `EditingCps` - Custom CPS value input
 - `SettingKeybind` - Capturing hotkey combinations
@@ -244,11 +255,13 @@ The application uses a state machine for different input modes:
 ### Platform-Specific Features
 
 **Windows Integration:**
+
 - Global hotkey registration via Win32 API (`RegisterHotKey`)
 - System message loop for hotkey detection
 - Windows-specific virtual key code mapping
 
 **Cross-Platform Considerations:**
+
 - Mouse control works on all platforms via enigo
 - System tray and notifications have fallback behavior
 - Global hotkeys currently Windows-only with graceful degradation
@@ -256,12 +269,14 @@ The application uses a state machine for different input modes:
 ## Configuration and Data Files
 
 ### Primary Configuration File
+
 - **Location**: `bclicker_config.toml` (current directory)
 - **Format**: TOML with nested sections
 - **Auto-generated**: Creates default config if missing
 - **Auto-saved**: Persists changes immediately
 
 ### Configuration Structure
+
 ```toml
 cps_presets = [20, 30, 40, 50]  # Available CPS preset values
 selected_preset = 2              # Currently selected preset index
@@ -285,18 +300,21 @@ session_duration = 0            # Session length in seconds
 ## Development Considerations
 
 ### Performance Characteristics
+
 - **Click Precision**: Microsecond-accurate timing using `Duration::from_micros(1_000_000 / cps)`
 - **UI Responsiveness**: 60 FPS rendering loop with conditional redrawing
 - **Memory Efficiency**: Minimal allocations in hot paths, Arc/Mutex for shared state
 - **CPU Usage**: Adaptive sleep timing based on UI visibility
 
 ### Thread Safety Patterns
+
 - `Arc<AtomicBool>` for simple boolean flags (clicker running, UI visibility)
 - `Arc<Mutex<T>>` for complex shared data (statistics, configuration)
 - MPSC channels for event communication between threads
 - Lock contention minimized through brief critical sections
 
 ### Error Handling Strategy
+
 - Graceful degradation for system integration features
 - Configuration corruption handled with default fallback
 - Non-critical errors logged but don't crash application
@@ -305,12 +323,14 @@ session_duration = 0            # Session length in seconds
 ### Key Extension Points
 
 **Adding New Features:**
+
 1. **New Input Modes**: Extend `InputMode` enum and add handlers in `handle_input()`
 2. **Additional Statistics**: Add fields to `Statistics` struct with migration logic
 3. **Audio Enhancements**: Extend `AudioManager` with new sound methods
 4. **Platform Support**: Implement platform-specific modules for hotkeys/tray
 
 **UI Customization:**
+
 - Theme system already in place with `Theme` struct
 - Modular widget rendering in `draw_ui()` function
 - Help system supports scrolling and formatted content
@@ -319,6 +339,7 @@ session_duration = 0            # Session length in seconds
 ### Common Patterns
 
 **Configuration Changes:**
+
 ```rust
 // Always save config after modifications
 app.config.some_setting = new_value;
@@ -327,6 +348,7 @@ app.needs_redraw = true;  // Trigger UI update
 ```
 
 **Shared State Updates:**
+
 ```rust
 // Safe access to shared statistics
 if let Ok(mut stats) = app.stats_tracker.lock() {
@@ -336,6 +358,7 @@ if let Ok(mut stats) = app.stats_tracker.lock() {
 ```
 
 **Event-Driven Updates:**
+
 ```rust
 // Mark redraw needed for next frame
 app.needs_redraw = true;
@@ -345,16 +368,19 @@ app.needs_redraw = true;
 ## Troubleshooting
 
 ### Common Build Issues
+
 - **Missing Windows SDK**: Global hotkeys require Windows development headers
 - **Audio Dependencies**: rodio may need system audio libraries on Linux
 - **Terminal Compatibility**: Some terminals may not support all TUI features
 
 ### Runtime Considerations
+
 - **Hotkey Conflicts**: Global hotkeys may conflict with other applications
 - **Permission Issues**: Some antivirus software may flag mouse automation
 - **Terminal Encoding**: Unicode characters in UI require UTF-8 terminal support
 
 ### Development Tips
+
 - Use `cargo run` for development with debug info and faster compilation
 - The application handles terminal cleanup automatically on exit
 - Configuration file is human-readable and can be manually edited
