@@ -1,0 +1,22 @@
+cps_presets = [
+    20,
+    30,
+    40,
+    50,
+]
+selected_preset = 2
+custom_cps_value = 99
+using_custom_cps = false
+selected_button = 0
+sound_enabled = false
+
+[toggle_keybind]
+mods = 6
+key = "B"
+
+[statistics]
+total_clicks = 0
+session_clicks = 0
+total_sessions = 0
+last_session_start = 0
+session_duration = 0
