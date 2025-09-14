@@ -17,6 +17,6 @@ key = "B"
 [statistics]
 total_clicks = 0
 session_clicks = 0
-total_sessions = 0
-last_session_start = 0
+total_sessions = 1
+last_session_start = 1757869402
 session_duration = 0
