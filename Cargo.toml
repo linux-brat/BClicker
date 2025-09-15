@@ -11,12 +11,7 @@ repository = "https://github.com/linux-brat/BClicker"
 documentation = "https://github.com/linux-brat/BClicker"
 keywords = ["clicker", "automation", "tui", "gui", "productivity"]
 categories = ["command-line-utilities", "gui"]
-exclude = [
-    "target/*",
-    ".git/*",
-    "*.log",
-    "bclicker_config.toml"
-]
+exclude = ["target/*", ".git/*", "*.log", "bclicker_config.toml"]
 
 [[bin]]
 name = "bclicker"
